@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meu Site Básico</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background: #f1eeeb;
+		}
+		header, footer {
+			background: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		main {
+			padding: 30px 10vw;
+		}
+		details.accordion {
+			background: #fff;
+			margin-bottom: 20px;
+			border-radius: 8px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+			overflow: hidden;
+		}
+		summary.accordion-header {
+			cursor: pointer;
+			padding: 20px;
+			background: #f0f0f0;
+			border: none;
+			outline: none;
+			width: 100%;
+			text-align: left;
+			font-size: 1.2em;
+			transition: background 0.2s;
+			list-style: none;
+		}
+		summary.accordion-header::-webkit-details-marker {
+			display: none;
+		}
+		summary.accordion-header:after {
+			content: " +";
+			float: right;
+			font-weight: bold;
+		}
+		details[open] summary.accordion-header:after {
+			content: " -";
+		}
+		.accordion-content {
+			padding: 0 20px 20px 20px;
+			background: #fff;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Bem-vindo ao Meu Site</h1>
+	</header>
+	<main>
+		<details class="accordion">
+			<summary class="accordion-header">Sobre</summary>
+			<div class="accordion-content">
+				<p>Olá! Meu nome é Vitor Moreira Santos. Sou entusiasta de desenvolvimento web e este site é um exemplo do meu trabalho com HTML e CSS. Gosto de criar páginas simples, organizadas e responsivas.</p>
+			</div>
+		</details>
+		<details class="accordion">
+			<summary class="accordion-header">Conhecimentos</summary>
+			<div class="accordion-content">
+				<p>Tenho experiência em HTML5 e CSS3, incluindo:</p>
+				<ul>
+					<li>Estruturação semântica de páginas</li>
+					<li>Estilização moderna e responsiva</li>
+					<li>Boas práticas de acessibilidade</li>
+					<li>Utilização de seletores, pseudo-classes e flexbox</li>
+				</ul>
+			</div>
+		</details>
+		<details class="accordion">
+			<summary class="accordion-header">Contato</summary>
+			<div class="accordion-content">
+				<p>Telefone: <br>+55 11 9001-1103<br><br>Email: <br>vitormoreira.san@gmail.com</p>
+			</div>
+		</details>
+	</main>
+	<footer>
+		Vitor Moreira Santos - 2026
+	</footer>
